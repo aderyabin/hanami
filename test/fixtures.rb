@@ -40,6 +40,9 @@ module CoffeeShop
 
       default_response_format :html
 
+      security.x_frame_options "DENY"
+      security.content_security_policy "default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; object-src 'self'; frame-src 'self'; media-src 'self'"
+
       scheme 'https'
       host   'hanami-coffeeshop.org'
 
