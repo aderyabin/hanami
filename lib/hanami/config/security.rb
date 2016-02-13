@@ -16,14 +16,6 @@ module Hanami
       # @see Hanami::Loader#_configure_controller_framework!
       CONTENT_SECURITY_POLICY_HEADER = 'Content-Security-Policy'.freeze
 
-      # Provides CSP support for IE 10 & 11
-      #
-      # @since x.x.x
-      # @api private
-      #
-      # @see Hanami::Loader#_configure_controller_framework!
-      X_CONTENT_SECURITY_POLICY_HEADER = 'X-Content-Security-Policy'.freeze
-
       # X-Frame-Options headers' value
       #
       # @overload x_frame_options(value)

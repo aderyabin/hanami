@@ -60,7 +60,6 @@ module Hanami
           default_headers({
             Hanami::Config::Security::X_FRAME_OPTIONS_HEADER           => config.security.x_frame_options,
             Hanami::Config::Security::CONTENT_SECURITY_POLICY_HEADER   => config.security.content_security_policy,
-            Hanami::Config::Security::X_CONTENT_SECURITY_POLICY_HEADER => config.security.content_security_policy
           })
           default_headers.merge!(STRICT_TRANSPORT_SECURITY_HEADER => STRICT_TRANSPORT_SECURITY_DEFAULT_VALUE) if config.force_ssl
 
